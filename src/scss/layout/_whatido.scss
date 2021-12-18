@@ -1,0 +1,59 @@
+.whatdo-grid {
+  .back-text-do {
+    font-weight: 700;
+    font-size: 8.5rem;
+    color: #f0e7e7;
+  }
+
+  h2 {
+    padding-left: 7.5rem;
+    font-size: 4rem;
+    color: $very_gray;
+    margin-top: -3.6rem;
+    text-decoration: underline rgb(255, 113, 113);
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    padding-left: 3rem;
+    
+    .card {
+      background-color: $smooth_brown;
+      width: 300px;
+      padding-bottom: 1.5rem;
+      // height: 200px;
+
+      img {
+        display: block;
+        margin: auto;
+        margin-top: 2rem;
+      }
+
+      h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $very_gray;
+        margin-top: 2rem;
+      }
+      .img1 {
+        
+        max-width: 190px;
+        
+      }
+
+      .img2 {
+        max-width: 190px;
+      }
+
+      .img3 {
+        max-width: 115px;
+      }
+    }
+  }
+}

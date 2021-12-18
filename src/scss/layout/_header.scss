@@ -1,0 +1,25 @@
+#header {
+  margin-bottom: 3rem;
+}
+
+#header .header-content {
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+
+    a {
+      text-decoration: none;
+      color: #323232;
+      font-weight: 600;
+
+      &:nth-child(2) {
+        border-bottom: 1px solid #7C6061;
+        color: #7C6061;
+      }
+    }
+  }
+}

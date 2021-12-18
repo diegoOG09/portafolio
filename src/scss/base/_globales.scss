@@ -2,3 +2,17 @@ body {
   background-color: #f7f7f5;
   font-family: 'Comfortaa', cursive;
 }
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}

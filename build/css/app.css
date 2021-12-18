@@ -341,4 +341,185 @@ body {
   background-color: #f7f7f5;
   font-family: "Comfortaa", cursive;
 }
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  margin-bottom: 3rem;
+}
+
+#header .header-content #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 3.5rem;
+}
+#header .header-content #navbar a {
+  text-decoration: none;
+  color: #323232;
+  font-weight: 600;
+}
+#header .header-content #navbar a:nth-child(2) {
+  border-bottom: 1px solid #7C6061;
+  color: #7C6061;
+}
+
+#main {
+  margin-bottom: 9.5rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 47% 50%;
+}
+.main-grid .myname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
+}
+.main-grid .myname h1 {
+  text-align: center;
+  color: #323232;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 10rem;
+  margin-bottom: 2rem;
+}
+.main-grid .myname h2 {
+  font-weight: 600;
+  color: #323232;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.main-grid .myname a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #F08358;
+}
+.main-grid .myname a i {
+  margin-right: 0.5rem;
+}
+
+.main-image img {
+  max-width: 650px;
+  padding-left: 4rem;
+}
+
+.about-me {
+  margin-bottom: 10rem;
+}
+
+.about-me .aboutme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about-me .aboutme-grid .about-img img {
+  max-width: 550px;
+  padding-left: 2.5rem;
+}
+
+.about-text h2 {
+  font-size: 4rem;
+  color: #323232;
+  text-align: center;
+  margin-top: -4.5rem;
+  text-decoration: underline #ff7171;
+  margin-bottom: 3.5rem;
+  font-weight: 600;
+}
+.about-text .me-text {
+  margin-bottom: 3.5rem;
+  padding-left: 6rem;
+}
+.about-text .me-text p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #323232;
+}
+.about-text .cv {
+  padding-left: 6rem;
+}
+.about-text .cv i {
+  color: #F08358;
+  margin-right: 0.5rem;
+  font-size: 1.4rem;
+}
+.about-text .cv a {
+  font-size: 1.3rem;
+  border-bottom: 1px solid #7C6061;
+  color: #323232;
+  font-family: "Comfortaa", cursive;
+}
+
+.back-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 8.5rem;
+  color: #F0E7E7;
+}
+
+.whatdo-grid .back-text-do {
+  font-weight: 700;
+  font-size: 8.5rem;
+  color: #f0e7e7;
+}
+.whatdo-grid h2 {
+  padding-left: 7.5rem;
+  font-size: 4rem;
+  color: #323232;
+  margin-top: -3.6rem;
+  text-decoration: underline #ff7171;
+  margin-bottom: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 6rem;
+}
+.whatdo-grid .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+  padding-left: 3rem;
+}
+.whatdo-grid .services-grid .card {
+  background-color: #F0E7E7;
+  width: 300px;
+  padding-bottom: 1.5rem;
+}
+.whatdo-grid .services-grid .card img {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+}
+.whatdo-grid .services-grid .card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323232;
+  margin-top: 2rem;
+}
+.whatdo-grid .services-grid .card .img1 {
+  max-width: 190px;
+}
+.whatdo-grid .services-grid .card .img2 {
+  max-width: 190px;
+}
+.whatdo-grid .services-grid .card .img3 {
+  max-width: 115px;
+}
 /*# sourceMappingURL=app.css.map */

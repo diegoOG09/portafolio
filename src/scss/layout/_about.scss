@@ -1,0 +1,62 @@
+.about-me {
+  margin-bottom: 10rem;
+}
+
+.about-me .aboutme-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  .about-img {
+    img {
+      max-width: 550px;
+      padding-left: 2.5rem;
+    }
+  }
+}
+
+.about-text {
+  h2 {
+    font-size: 4rem;
+    color: $very_gray;
+    text-align: center;
+    margin-top: -4.5rem;
+    text-decoration: underline rgb(255, 113, 113);
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+  }
+
+  .me-text {
+    margin-bottom: 3.5rem;
+    padding-left: 6rem;
+    p {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $very_gray;
+    }
+  }
+
+  .cv {
+    padding-left: 6rem;
+    i {
+      color: $like_salmon;
+      margin-right: .5rem;
+      font-size: 1.4rem;
+    }
+
+    a {
+      font-size: 1.3rem;
+      border-bottom: 1px solid #7C6061;
+      color: $very_gray;
+      font-family: 'Comfortaa', cursive;
+    }
+  }
+}
+
+.back-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 8.5rem;
+  color: #F0E7E7;
+}
