@@ -21,4 +21,67 @@
     font-weight: 600;
     margin-bottom: 4rem;
   }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    .contact-image {
+      img {
+        display: block;
+        margin: auto;
+        max-width: 370px;
+      }
+    }
+
+    .contact-form {
+      .name-span {
+        padding-left: 1.5rem;
+        font-size: .9rem;
+        color: #adadad;
+        font-weight: 600;
+      }
+      #form {
+        margin-top: .4rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+
+        input {
+          font-weight: 700;
+          color: #323232;
+          padding: 1rem 0 1rem 1.5rem;
+          border: 2px solid #cacac8;
+        }
+        input:focus {
+          outline: none;
+          border:2px solid #F08358;
+        }
+
+        textarea {
+          color: #323232;
+          padding: 1rem 0 1rem 1.5rem;
+          border: 2px solid #cacac8;
+          resize: none;
+        }
+
+        textarea:focus {
+          outline: none;
+          border:2px solid #F08358;
+        }
+
+        button {
+          i {
+            margin-right: .5rem;
+          }
+          cursor: pointer;
+          color: $like_salmon;
+          border: none;
+          background-color: #f7f7f5;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
