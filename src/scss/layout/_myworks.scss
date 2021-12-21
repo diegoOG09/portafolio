@@ -1,0 +1,63 @@
+.portfolio {
+  margin-bottom: 3rem;
+  .back-text-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 8.5rem;
+    color: #f0e7e7;
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: $very_gray;
+    margin-top: -3.8rem;
+    text-decoration: underline rgb(255, 113, 113);
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+  }
+
+  h3 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 120px;
+    color: $very_gray;
+    font-weight: 500;
+    background-color: $smooth_brown;
+    padding: .5rem 0 .5rem 0;
+    margin-bottom: 5rem;
+    font-size: 1rem;
+  }
+
+  .modal-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    .modal-img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        max-width: 600px;
+      }
+
+      .move {
+        cursor: pointer;
+      }
+    }
+
+    .modal-text {
+      margin: auto;
+      #webtext {
+        padding: 0 3rem 0 3rem;
+      }
+    }
+  }
+}
+

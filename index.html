@@ -36,7 +36,7 @@
         <a href="#"><i class="fas fa-arrow-right"></i>Get In Touch</a>
       </div>
       <div class="main-image">
-        <img src="images/dev2.png" alt="">
+        <img loading="lazy" src="images/dev2.png" alt="">
       </div>
     </div>
   </main>
@@ -45,7 +45,7 @@
 
     <div class="aboutme-grid content">
       <div class="about-img">
-        <img src="images/about_me.png" alt="About me image">
+        <img loading="lazy" src="images/about_me.png" alt="About me image">
       </div>
       <div class="about-text">
         <span class="back-text">Profile</span>
@@ -73,45 +73,68 @@
     <h2>What I do?</h2>
     <div class="services-grid">
       <div class="card">
-        <img class="img1" src="images/front.png" alt="">
+        <img loading="lazy" class="img1" src="images/front.png" alt="">
         <h3>Web layout with HTML/CSS</h3>
       </div>
       <div class="card">
-        <img class="img2" src="images/javascript.png" alt="">
+        <img loading="lazy" class="img2" src="images/javascript.png" alt="">
         <h3>Javascript Vanilla</h3>
       </div>
       <div class="card">
-        <img class="img3" src="images/db.png" alt="">
+        <img loading="lazy" class="img3" src="images/db.png" alt="">
         <h3>Database design</h3>
       </div>
     </div>
   </section>
 
+  <section class="skills-grid content">
+    <span class="back-text-skills">Skills</span>
+    <h2>Languages/Technologies</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <li><i class="fas fa-chevron-right"></i>HTML/CSS</li>
+        <li><i class="fas fa-chevron-right"></i>SASS</li>
+        <li><i class="fas fa-chevron-right"></i>Javascript</li>
+        <li><i class="fas fa-chevron-right"></i>Java basics</li>
+      </div>
+      <div class="card">
+        <li><i class="fas fa-chevron-right"></i>SQL/MySQL</li>
+        <li><i class="fas fa-chevron-right"></i>GNU/Linux</li>
+        <li><i class="fas fa-chevron-right"></i>Bash</li>
+        <li><i class="fas fa-chevron-right"></i>Git</li>
+      </div>
+      <div class="card">
+        <li><i class="fas fa-chevron-right"></i>Shopify</li>
+        <li><i class="fas fa-chevron-right"></i>Ruby basics</li>
+        <li><i class="fas fa-chevron-right"></i>GulpJS</li>
+      </div>
+    </div>
+  </section>
+
   <section class="portfolio content">
-    <span>Portfolio</span>
+    <span class="back-text-portfolio">Portfolio</span>
     <h2>My Works</h2>
     <h3>Websites</h3>
     <div class="modal-grid">
       <div class="modal-img">
-        <i class="fas fa-arrow-left"></i>
-        <img src="images/website.png" alt="">
-        <i class="fas fa-arrow-right"></i>
+        <i id="prev" class="fas fa-arrow-left move"></i>
+        <img id="website" src="" alt="">
+        <i id="next" class="fas fa-arrow-right move"></i>
       </div>
       <div class="modal-text">
-        <p>Dimmy Club is a simple device mockup generator</p>
-        <p>for your screenshots. Choose from a range of laptops,</p>
-        <p>tablets and mobiles and pick a background</p>
-        <p>colour to see your website in situ in seconds.</p>
+        <p id="webtext">
+          
+        </p>
       </div>
     </div>
   </section>
 
   <section class="contact-me content">
-    <span>Contact</span>
+    <span class="back-text-contact">Contact</span>
     <h2>Write me</h2>
     <div class="contact-grid">
       <div class="contact-image">
-        <img src="images/contact-me.png" alt="Contact image">
+        <img loading="lazy" src="images/contact-me.png" alt="Contact image">
       </div>
 
       <div class="contact-form">
@@ -147,6 +170,8 @@
       <span>Thank you</span>
     </div>
   </footer>
+
+  <script src="src/js/script.js"></script>
 
 </body>
 

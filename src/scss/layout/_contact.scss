@@ -1,0 +1,24 @@
+.contact-me {
+  
+  .back-text-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 8.5rem;
+    color: #f0e7e7;
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: $very_gray;
+    margin-top: -3.8rem;
+    text-decoration: underline rgb(255, 113, 113);
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+  }
+}
