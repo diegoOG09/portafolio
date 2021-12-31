@@ -1,5 +1,5 @@
 .contact-me {
-  
+  margin-bottom: 6rem;
   .back-text-contact {
     display: flex;
     align-items: center;
@@ -46,6 +46,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 1.5rem;
+        max-width: 422px;
 
         input {
           font-weight: 700;
