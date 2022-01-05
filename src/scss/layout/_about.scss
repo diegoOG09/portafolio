@@ -61,7 +61,7 @@
   color: #F0E7E7;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .about-me .aboutme-grid {
     display: flex;
     flex-direction: column-reverse;

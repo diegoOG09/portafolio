@@ -387,7 +387,7 @@ a {
   color: #7C6061;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   #header .header-content #navbar {
     max-width: 350px;
   }
@@ -434,7 +434,7 @@ a {
   padding-left: 4rem;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .main-grid {
     display: flex;
     flex-direction: column;
@@ -510,7 +510,7 @@ a {
   color: #F0E7E7;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .about-me .aboutme-grid {
     display: flex;
     flex-direction: column-reverse;
@@ -600,7 +600,7 @@ a {
   max-width: 115px;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .whatdo-grid .back-text-do {
     display: flex;
     align-items: center;
@@ -706,7 +706,7 @@ a {
   padding: 0 3rem 0 3rem;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .portfolio {
     margin-bottom: 9rem;
   }
@@ -769,7 +769,7 @@ a {
   margin-right: 0.5rem;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .skills-grid {
     margin-bottom: 9rem;
   }
@@ -877,7 +877,7 @@ a {
   margin-right: 0.5rem;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .contact-me {
     margin-bottom: 6rem;
   }
@@ -946,7 +946,7 @@ a {
   font-size: 8rem;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   #footer {
     background-color: #F0E7E7;
     padding: 3rem 0 3rem 0;
