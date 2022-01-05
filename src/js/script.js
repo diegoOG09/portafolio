@@ -7,17 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
   let weblink = document.getElementById('links')
 
 
-  webimg.src = '/images/website1.png'
+  webimg.src = 'images/website1.png'
   webtext.innerHTML = "<b>BlogDeCafe</b> is a blog dedicated to coffee where tips, recipes and courses are provided."
   weblink.href = 'https://gifted-einstein-e0f0e1.netlify.app/'
 
 
   let images = [
-    '/images/website1.png',
-    '/images/website2.png',
+    'images/website1.png',
+    'images/website2.png',
     // '/images/website3.png',
-    '/images/website4.png',
-    '/images/website5.png',
+    'images/website4.png',
+    'images/website5.png',
   ]
 
   let title = [
