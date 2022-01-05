@@ -337,6 +337,10 @@ template {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f7f7f5;
   font-family: "Comfortaa", cursive;
@@ -356,6 +360,11 @@ a {
   margin: 0 auto;
 }
 
+@media (min-width: 375px) {
+  .content {
+    padding: 0 1rem 0 1rem;
+  }
+}
 #header {
   margin-bottom: 3rem;
 }
@@ -378,6 +387,11 @@ a {
   color: #7C6061;
 }
 
+@media (min-width: 375px) {
+  #header .header-content #navbar {
+    max-width: 350px;
+  }
+}
 #main {
   margin-bottom: 9.5rem;
 }
@@ -420,6 +434,27 @@ a {
   padding-left: 4rem;
 }
 
+@media (min-width: 375px) {
+  .main-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-grid .myname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 0 0;
+    margin-bottom: 2rem;
+  }
+  .main-grid .myname h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+  .main-grid .main-image img {
+    max-width: 350px;
+    padding-left: 0rem;
+  }
+}
 .about-me {
   margin-bottom: 10rem;
 }
@@ -475,6 +510,45 @@ a {
   color: #F0E7E7;
 }
 
+@media (min-width: 375px) {
+  .about-me .aboutme-grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-me .aboutme-grid .about-img img {
+    max-width: 340px;
+    padding-left: 0;
+  }
+
+  .about-text {
+    margin-bottom: 2rem;
+  }
+  .about-text h2 {
+    font-size: 3rem;
+    color: #323232;
+    text-align: center;
+    margin-top: -3rem;
+    text-decoration: underline #ff7171;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+  }
+  .about-text .me-text {
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .about-text .me-text p {
+    font-size: 1.2rem;
+  }
+  .about-text .cv {
+    padding-left: 5rem;
+  }
+
+  .back-text {
+    font-size: 6rem;
+  }
+}
 .whatdo-grid {
   margin-bottom: 9rem;
 }
@@ -526,6 +600,55 @@ a {
   max-width: 115px;
 }
 
+@media (min-width: 375px) {
+  .whatdo-grid .back-text-do {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+  .whatdo-grid h2 {
+    font-size: 2.5rem;
+    color: #323232;
+    text-align: center;
+    margin-top: -2.5rem;
+    padding-left: 0;
+    margin-bottom: 4rem;
+  }
+  .whatdo-grid .services-grid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-left: 0;
+  }
+  .whatdo-grid .services-grid .card {
+    background-color: #F0E7E7;
+    width: 300px;
+    padding-bottom: 1.5rem;
+  }
+  .whatdo-grid .services-grid .card img {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .whatdo-grid .services-grid .card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #323232;
+    margin-top: 2rem;
+  }
+  .whatdo-grid .services-grid .card .img1 {
+    max-width: 190px;
+  }
+  .whatdo-grid .services-grid .card .img2 {
+    max-width: 190px;
+  }
+  .whatdo-grid .services-grid .card .img3 {
+    max-width: 115px;
+  }
+}
 .portfolio {
   margin-bottom: 3rem;
 }
@@ -583,6 +706,34 @@ a {
   padding: 0 3rem 0 3rem;
 }
 
+@media (min-width: 375px) {
+  .portfolio {
+    margin-bottom: 9rem;
+  }
+  .portfolio .back-text-portfolio {
+    font-size: 4.7rem;
+  }
+  .portfolio h2 {
+    font-size: 3rem;
+    margin-top: -2.5rem;
+    margin-bottom: 3.5rem;
+  }
+  .portfolio h3 {
+    margin-bottom: 3rem;
+  }
+  .portfolio .modal-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio .modal-grid .modal-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .portfolio .modal-grid .modal-img img {
+    max-width: 300px;
+  }
+}
 .skills-grid {
   margin-bottom: 12rem;
 }
@@ -618,6 +769,37 @@ a {
   margin-right: 0.5rem;
 }
 
+@media (min-width: 375px) {
+  .skills-grid {
+    margin-bottom: 9rem;
+  }
+  .skills-grid .back-text-skills {
+    justify-content: center;
+    font-size: 6rem;
+  }
+  .skills-grid h2 {
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: -2.5rem;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  .skills-grid .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills-grid .skills-grid .card {
+    list-style: none;
+    margin: 0 auto;
+  }
+  .skills-grid .skills-grid .card li {
+    font-size: 0.8rem;
+  }
+  .skills-grid .skills-grid .card i {
+    margin-right: 0.5rem;
+  }
+}
 .contact-me {
   margin-bottom: 6rem;
 }
@@ -695,6 +877,28 @@ a {
   margin-right: 0.5rem;
 }
 
+@media (min-width: 375px) {
+  .contact-me {
+    margin-bottom: 6rem;
+  }
+  .contact-me .back-text-contact {
+    font-size: 5rem;
+  }
+  .contact-me h2 {
+    font-size: 3rem;
+    margin-top: -2.5rem;
+    margin-bottom: 3.5rem;
+  }
+  .contact-me .contact-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-me .contact-grid .contact-image img {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+  }
+}
 #footer {
   background-color: #F0E7E7;
   padding: 3rem 0 3rem 0;
@@ -712,8 +916,14 @@ a {
 #footer .footer-grid .foot:nth-child(2) {
   margin: auto;
 }
+#footer .footer-grid .foot:nth-child(2) i {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
 #footer .footer-grid .foot:nth-child(3) {
   display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
   padding-top: 15%;
   align-items: flex-start;
   color: #323232;
@@ -723,10 +933,6 @@ a {
   text-decoration: none;
   color: #323232;
   font-weight: 600;
-}
-#footer .footer-grid a:nth-child(2) {
-  border-bottom: 1px solid #7C6061;
-  color: #7C6061;
 }
 
 .thank-you {
@@ -738,5 +944,37 @@ a {
   font-weight: 400;
   color: #323232;
   font-size: 8rem;
+}
+
+@media (min-width: 375px) {
+  #footer {
+    background-color: #F0E7E7;
+    padding: 3rem 0 3rem 0;
+  }
+  #footer .footer-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer .footer-grid .foot:first-child {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  #footer .footer-grid .foot:nth-child(3) {
+    padding-top: 15%;
+    align-items: center;
+    color: #323232;
+    font-weight: 700;
+  }
+
+  .thank-you {
+    background-color: #F08358;
+    padding: 6rem 0 6rem 0;
+  }
+  .thank-you h4 {
+    text-align: center;
+    font-weight: 400;
+    color: #323232;
+    font-size: 3.5rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */

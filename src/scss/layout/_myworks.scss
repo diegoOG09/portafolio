@@ -61,3 +61,36 @@
   }
 }
 
+@media (min-width: 375px) {
+  .portfolio {
+    margin-bottom: 9rem;
+    .back-text-portfolio {
+      
+      font-size: 4.7rem;
+      
+    }
+  
+    h2 {
+      font-size: 3rem;
+      margin-top: -2.5rem;
+      margin-bottom: 3.5rem;
+    }
+  
+    h3 {
+      margin-bottom: 3rem;
+    }
+  
+    .modal-grid {
+      display: flex;
+      flex-direction: column;
+      .modal-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}

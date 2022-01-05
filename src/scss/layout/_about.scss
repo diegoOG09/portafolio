@@ -60,3 +60,47 @@
   font-size: 8.5rem;
   color: #F0E7E7;
 }
+
+@media (min-width: 375px) {
+  .about-me .aboutme-grid {
+    display: flex;
+    flex-direction: column-reverse;
+  
+    .about-img {
+      img {
+        max-width: 340px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .about-text {
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 3rem;
+      color: $very_gray;
+      text-align: center;
+      margin-top: -3rem;
+      text-decoration: underline rgb(255, 113, 113);
+      margin-bottom: 3.5rem;
+      font-weight: 600;
+    }
+  
+    .me-text {
+      margin-bottom: 3rem;
+      text-align: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .cv {
+      padding-left: 5rem;
+    }
+  }
+
+  .back-text {
+    font-size: 6rem;
+  }
+}

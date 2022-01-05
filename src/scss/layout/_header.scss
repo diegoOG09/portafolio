@@ -23,3 +23,11 @@
     }
   }
 }
+
+@media(min-width: 375px) {
+  #header .header-content {
+    #navbar {
+      max-width: 350px;
+    }
+  }
+}

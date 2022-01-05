@@ -10,11 +10,3 @@
 # Typography
 
 - Comfortaa regular
-
-# Font size
-
-- H1: 144px
-- H2: 64px
-- H3: 36px
-- H4: 18px
-- H5: 14px

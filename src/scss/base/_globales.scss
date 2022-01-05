@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f7f7f5;
   font-family: 'Comfortaa', cursive;
+  
 }
 
 h1, h2, h3, h4, p {
@@ -15,4 +20,10 @@ a {
 .content {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (min-width: 375px) {
+  .content {
+    padding: 0 1rem 0 1rem;
+  }
 }
