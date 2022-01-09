@@ -126,7 +126,7 @@
         <a id="links" href="" target="_blank">
           <img id="website" src="" alt="">
         </a>
-        
+
         <i id="next" class="fas fa-arrow-right move"></i>
       </div>
       <div class="modal-text">
@@ -150,11 +150,11 @@
         <span class="name-span">Name</span>
         <form id="form" action="">
 
-          <input type="text" placeholder="">
-          <input type="email" placeholder="Email">
+          <input id="name" type="text" placeholder="">
+          <input id="email" type="email" placeholder="Email">
           <textarea name="txtArea" id="txtArea" cols="30" rows="10" placeholder="Message"></textarea>
 
-          <button type="submit"><i class="fas fa-arrow-right"></i>Send</button>
+          <button @click id="sendBtn" type="submit"><i class="fas fa-arrow-right"></i>Send</button>
         </form>
       </div>
     </div>
@@ -192,6 +192,32 @@
   </div>
 
   <script src="src/js/script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_4bFBY731BSsoLK5mgtLBD");
+      const sendBtn = document.querySelector('#sendBtn')
+      const nameValue = document.querySelector('#name')
+      const emailValue = document.querySelector('#email')
+
+
+      function enviar() {
+        let data = {
+          name: nameValue,
+          email: emailValue
+        }
+
+
+        emailjs.send('service_gjk6ws8', 'template_5nfkvhm', data)
+          .then(function (response) {
+            console.log('SUCCES', response.status, response.text)
+          }, function (error) {
+            console.log('FAILED...', error)
+          })
+      }
+
+    })();
+  </script>
 
 </body>
 
