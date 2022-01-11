@@ -838,34 +838,34 @@ a {
   color: #adadad;
   font-weight: 600;
 }
-.contact-me .contact-grid .contact-form #form {
+.contact-me .contact-grid .contact-form #myForm {
   margin-top: 0.4rem;
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
   max-width: 422px;
 }
-.contact-me .contact-grid .contact-form #form input {
+.contact-me .contact-grid .contact-form #myForm input {
   font-weight: 700;
   color: #323232;
   padding: 1rem 0 1rem 1.5rem;
   border: 2px solid #cacac8;
 }
-.contact-me .contact-grid .contact-form #form input:focus {
+.contact-me .contact-grid .contact-form #myForm input:focus {
   outline: none;
   border: 2px solid #F08358;
 }
-.contact-me .contact-grid .contact-form #form textarea {
+.contact-me .contact-grid .contact-form #myForm textarea {
   color: #323232;
   padding: 1rem 0 1rem 1.5rem;
   border: 2px solid #cacac8;
   resize: none;
 }
-.contact-me .contact-grid .contact-form #form textarea:focus {
+.contact-me .contact-grid .contact-form #myForm textarea:focus {
   outline: none;
   border: 2px solid #F08358;
 }
-.contact-me .contact-grid .contact-form #form button {
+.contact-me .contact-grid .contact-form #myForm button {
   cursor: pointer;
   color: #F08358;
   border: none;
@@ -873,7 +873,7 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.contact-me .contact-grid .contact-form #form button i {
+.contact-me .contact-grid .contact-form #myForm button i {
   margin-right: 0.5rem;
 }
 

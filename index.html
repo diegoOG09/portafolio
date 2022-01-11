@@ -148,13 +148,14 @@
 
       <div class="contact-form">
         <span class="name-span">Name</span>
-        <form id="form" action="">
+        <form id="myForm">
 
-          <input id="name" type="text" placeholder="">
-          <input id="email" type="email" placeholder="Email">
-          <textarea name="txtArea" id="txtArea" cols="30" rows="10" placeholder="Message"></textarea>
+          <input id="from_name" name="from_name" type="text" placeholder="" autocomplete="off">
+          <input id="from_email" name="from_email" type="email" placeholder="Email">
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
 
-          <button @click id="sendBtn" type="submit"><i class="fas fa-arrow-right"></i>Send</button>
+          <button id="sendBtn" type="submit"><i class="fas fa-arrow-right"></i>Send</button>
+
         </form>
       </div>
     </div>
@@ -191,34 +192,9 @@
     <h4 class="content">Thank you</h4>
   </div>
 
-  <script src="src/js/script.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_4bFBY731BSsoLK5mgtLBD");
-      const sendBtn = document.querySelector('#sendBtn')
-      const nameValue = document.querySelector('#name')
-      const emailValue = document.querySelector('#email')
-
-
-      function enviar() {
-        let data = {
-          name: nameValue,
-          email: emailValue
-        }
-
-
-        emailjs.send('service_gjk6ws8', 'template_5nfkvhm', data)
-          .then(function (response) {
-            console.log('SUCCES', response.status, response.text)
-          }, function (error) {
-            console.log('FAILED...', error)
-          })
-      }
-
-    })();
-  </script>
-
+  <script src="src/js/script.js"></script>
+  
 </body>
 
 </html>

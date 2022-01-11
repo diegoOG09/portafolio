@@ -8,21 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BC-MAY-21-ROR/kata-01-diseno-web-k1-nov21-3.git"
+    "url": "git+https://github.com/diegoOG09/portafolio.git"
   },
   "author": "diegoOG09",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BC-MAY-21-ROR/kata-01-diseno-web-k1-nov21-3/issues"
+    "url": "https://github.com/diegoOG09/portafolio.git/issues"
   },
-  "homepage": "https://github.com/BC-MAY-21-ROR/kata-01-diseno-web-k1-nov21-3#readme",
+  "homepage": "https://github.com/diegoOG09/portafolio.git#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "sass": "^1.43.4"
-  },
-  "dependencies": {
-    "@emailjs/browser": "^3.3.1"
   }
 }

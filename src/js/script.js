@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+
+  let form = document.getElementById('myForm')
+  form.addEventListener('submit', sendData)
+
+
   let index = 0;
 
   let webimg = document.getElementById('website')
@@ -65,3 +70,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 })
+
+function sendData(e) {
+  e.preventDefault()
+  let form = document.getElementById('myForm')
+  const inputName = document.getElementById('from_name').value
+  const inputEmail = document.getElementById('from_email').value
+  const inputMessage = document.getElementById('message').value
+
+  if (inputName === '' || inputEmail === '' && inputMessage === '') {
+    console.log('Campos vacios...')
+    return
+  } else {
+    emailjs.sendForm('service_gjk6ws8', 'template_5nfkvhm', form, 'user_4bFBY731BSsoLK5mgtLBD')
+      .then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+      }, function (error) {
+        console.log('FAILED...', error);
+      });
+
+    return
+    
+  }
+  form.reset()
+  this.submit()
+}
