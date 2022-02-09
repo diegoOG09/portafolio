@@ -1,26 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-  let form = document.getElementById('myForm')
-  form.addEventListener('submit', sendData)
-
-
   let index = 0;
 
   let webimg = document.getElementById('website')
   let webtext = document.getElementById('webtext')
   let weblink = document.getElementById('links')
 
-
   webimg.src = 'images/website1.png'
   webtext.innerHTML = "<b>BlogDeCafe</b> is a blog dedicated to coffee where tips, recipes and courses are provided."
   weblink.href = 'https://gifted-einstein-e0f0e1.netlify.app/'
 
-
   let images = [
     'images/website1.png',
     'images/website2.png',
-    // '/images/website3.png',
     'images/website4.png',
     'images/website5.png',
   ]
@@ -36,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let text = [
     "is a blog dedicated to coffee where tips, recipes and courses are provided.",
     "is a task manager that uses browser storage. Tasks can be added and deleted.",
-    // "is a site with courses that can be added to a shopping cart. Items in the cart can be removed. Uses browser storage.",
     "engine has a list of cars, which can be filtered by make, year, etc.",
     "is a system designed for a company that wants to check in and check out employees."
   ]
@@ -70,28 +61,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 })
-
-function sendData(e) {
-  e.preventDefault()
-  let form = document.getElementById('myForm')
-  const inputName = document.getElementById('from_name').value
-  const inputEmail = document.getElementById('from_email').value
-  const inputMessage = document.getElementById('message').value
-
-  if (inputName === '' || inputEmail === '' && inputMessage === '') {
-    console.log('Campos vacios...')
-    return
-  } else {
-    emailjs.sendForm('service_gjk6ws8', 'template_5nfkvhm', form, 'user_4bFBY731BSsoLK5mgtLBD')
-      .then(function (response) {
-        console.log('SUCCESS!', response.status, response.text);
-      }, function (error) {
-        console.log('FAILED...', error);
-      });
-
-    return
-    
-  }
-  form.reset()
-  this.submit()
-}
