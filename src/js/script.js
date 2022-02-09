@@ -60,4 +60,27 @@ document.addEventListener('DOMContentLoaded', () => {
     weblink.href = links[index]
   }
 
+  //Next we want to create a function that will be called when that element is intersected
+  function handleIntersection(entries) {
+    //The callback will return an array of entries, even if you are only onserving a single item
+    entries.map(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animation')
+      } else {
+        entry.target.classList.remove('animation')
+      }
+    })
+  }
+
+  //Next we instantiate the observer with the function we crated above.
+  //This takes and optional configuration
+  //Object that we will use in the other examples
+
+  const observer = new IntersectionObserver(handleIntersection)
+  document.querySelectorAll(".pro-bar").forEach(i => {
+    if (i) {
+      observer.observe(i)
+    }
+  })
+ 
 })

@@ -764,9 +764,37 @@ a {
 .skills-grid .skills-grid .card {
   list-style: none;
   margin: 0 auto;
+  line-height: 2rem;
 }
 .skills-grid .skills-grid .card i {
   margin-right: 0.5rem;
+}
+.skills-grid .skills-grid .card .pro-bar {
+  position: relative;
+  height: 12px;
+  width: 70%;
+  border: 7px solid #f08358;
+  border-radius: 15px;
+}
+.skills-grid .skills-grid .card .pro-bar.animation {
+  animation: progres 2s normal linear;
+}
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  65% {
+    width: 65%;
+  }
+  70% {
+    width: 70%;
+  }
 }
 
 @media (max-width: 428px) {

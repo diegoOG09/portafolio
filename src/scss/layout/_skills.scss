@@ -24,14 +24,43 @@
 
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     .card {
       list-style: none;
       margin: 0 auto;
+      line-height: 2rem;
 
       i {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
+      }
+      .pro-bar {
+        position: relative;
+        height: 12px;
+        width: 70%;
+        border: 7px solid #f08358;
+        border-radius: 15px;
+      }
+      .pro-bar.animation {
+        animation: progres 2s normal linear;
+
+        @keyframes progres {
+          0% {
+            width: 0%;
+          }
+          25% {
+            width: 25%;
+          }
+          50% {
+            width: 50%;
+          }
+          65% {
+            width: 65%;
+          }
+          70% {
+            width: 70%;
+          }
+        }
       }
     }
   }
@@ -42,9 +71,9 @@
     margin-bottom: 9rem;
     .back-text-skills {
       justify-content: center;
-      font-size: 6rem;  
+      font-size: 6rem;
     }
-  
+
     h2 {
       justify-content: center;
       font-size: 1.5rem;
@@ -53,20 +82,20 @@
       font-weight: 600;
       margin-bottom: 3rem;
     }
-  
+
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
-  
+      grid-template-columns: repeat(3, 1fr);
+
       .card {
         list-style: none;
         margin: 0 auto;
-  
+
         li {
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
         i {
-          margin-right: .5rem;
+          margin-right: 0.5rem;
         }
       }
     }
