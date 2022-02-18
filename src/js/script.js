@@ -1,22 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-
   let index = 0;
-
   let webimg = document.getElementById('website')
   let webtext = document.getElementById('webtext')
   let weblink = document.getElementById('links')
-
   webimg.src = 'images/website1.png'
   webtext.innerHTML = "<b>BlogDeCafe</b> is a blog dedicated to coffee where tips, recipes and courses are provided."
   weblink.href = 'https://gifted-einstein-e0f0e1.netlify.app/'
-
   let images = [
     'images/website1.png',
     'images/website2.png',
     'images/website4.png',
     'images/website5.png',
   ]
-
   let title = [
     "BlogDeCafe",
     "To Do List",
@@ -24,20 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
     "Buscador de autos",
     "Check in/out"
   ]
-
   let text = [
     "is a blog dedicated to coffee where tips, recipes and courses are provided.",
     "is a task manager that uses browser storage. Tasks can be added and deleted.",
     "engine has a list of cars, which can be filtered by make, year, etc.",
     "is a system designed for a company that wants to check in and check out employees."
   ]
-
   let links = [
     "https://gifted-einstein-e0f0e1.netlify.app/",
     "https://ecstatic-wright-a63ed1.netlify.app/",
     "https://gracious-nobel-67deb6.netlify.app/",
   ]
-
   const btnNext = document.getElementById('next')
   btnNext.onclick = function next() {
     index += 1
@@ -48,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     webtext.innerHTML = `<b>${title[index]}</b> ${text[index]}`
     weblink.href = links[index]
   }
-
   const btnPrev = document.getElementById('prev')
   btnPrev.onclick = function prev() {
     index -= 1
@@ -59,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     webtext.innerHTML = `<b>${title[index]}</b> ${text[index]}`
     weblink.href = links[index]
   }
-
   //Next we want to create a function that will be called when that element is intersected
   function handleIntersection(entries) {
     //The callback will return an array of entries, even if you are only onserving a single item
@@ -71,16 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   }
-
-  //Next we instantiate the observer with the function we crated above.
-  //This takes and optional configuration
-  //Object that we will use in the other examples
-
   const observer = new IntersectionObserver(handleIntersection)
   document.querySelectorAll(".pro-bar").forEach(i => {
     if (i) {
       observer.observe(i)
     }
   })
- 
 })
