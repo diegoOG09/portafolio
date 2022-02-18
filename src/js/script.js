@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "https://gifted-einstein-e0f0e1.netlify.app/",
     "https://ecstatic-wright-a63ed1.netlify.app/",
     "https://gracious-nobel-67deb6.netlify.app/",
+    "https://tlostl-f.herokuapp.com/"
   ]
   const btnNext = document.getElementById('next')
   btnNext.onclick = function next() {
