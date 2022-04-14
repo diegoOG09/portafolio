@@ -568,15 +568,17 @@ a {
   margin-bottom: 6rem;
 }
 .whatdo-grid .services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 5rem;
-  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 .whatdo-grid .services-grid .card {
+  border-radius: 10px;
   background-color: #F0E7E7;
   width: 300px;
   padding-bottom: 1.5rem;
+  height: auto;
 }
 .whatdo-grid .services-grid .card img {
   display: block;
@@ -584,9 +586,7 @@ a {
   margin-top: 2rem;
 }
 .whatdo-grid .services-grid .card h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   color: #323232;
   margin-top: 2rem;
 }
