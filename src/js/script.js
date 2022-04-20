@@ -14,20 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
   ]
   let title = [
     "BlogDeCafe",
-    "To Do List",
+    "ToDo App",
     // "Universidad",
     "Buscador de autos",
     "Check in/out"
   ]
   let text = [
     "is a blog dedicated to coffee where tips, recipes and courses are provided.",
-    "is a task manager that uses browser storage. Tasks can be added and deleted.",
+    "is a task manager made with Rails & Javascript",
     "engine has a list of cars, which can be filtered by make, year, etc.",
     "is a system designed for a company that wants to check in and check out employees."
   ]
   let links = [
     "https://gifted-einstein-e0f0e1.netlify.app/",
-    "https://ecstatic-wright-a63ed1.netlify.app/",
+    "https://whattodo-rails.herokuapp.com/",
     "https://gracious-nobel-67deb6.netlify.app/",
     "https://tlostl-f.herokuapp.com/"
   ]
