@@ -11,25 +11,29 @@ document.addEventListener('DOMContentLoaded', () => {
     'images/website2.png',
     'images/website4.png',
     'images/website5.png',
+    'images/website6.png'
   ]
   let title = [
     "BlogDeCafe",
     "ToDo App",
     // "Universidad",
     "Buscador de autos",
-    "Check in/out"
+    "Check in/out",
+    "Personal website & blog"
   ]
   let text = [
     "is a blog dedicated to coffee where tips, recipes and courses are provided.",
     "is a task manager made with Rails & Javascript",
     "engine has a list of cars, which can be filtered by make, year, etc.",
-    "is a system designed for a company that wants to check in and check out employees."
+    "is a system designed for a company that wants to check in and check out employees.",
+    "is where I write articles and tell some things about myself."
   ]
   let links = [
     "https://gifted-einstein-e0f0e1.netlify.app/",
     "https://whattodo-rails.herokuapp.com/",
     "https://gracious-nobel-67deb6.netlify.app/",
-    "https://tlostl-f.herokuapp.com/"
+    "https://tlostl-f.herokuapp.com/",
+    "https://diego-salinas-blog.herokuapp.com/"
   ]
   const btnNext = document.getElementById('next')
   btnNext.onclick = function next() {
