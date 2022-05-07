@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'images/website2.png',
     'images/website4.png',
     'images/website5.png',
-    'images/website6.png'
+    'images/website6.png',
+    'images/website7.png'
   ]
   let title = [
     "BlogDeCafe",
@@ -19,21 +20,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // "Universidad",
     "Buscador de autos",
     "Check in/out",
-    "Personal website & blog"
+    "Personal website & blog",
+    "Frontend Mentor - Remote work app"
   ]
   let text = [
     "is a blog dedicated to coffee where tips, recipes and courses are provided.",
     "is a task manager made with Rails & Javascript",
-    "engine has a list of cars, which can be filtered by make, year, etc.",
-    "is a system designed for a company that wants to check in and check out employees.",
-    "is where I write articles and tell some things about myself."
+    "engine has a list of cars, which can be filtered by make, year, etc. [HTML,CSS,JS]",
+    "is a system designed for a company that wants to check in and check out employees. [Rails, JS, HTML, CSS & JS]",
+    "is where I write articles and tell some things about myself. It takes a while to open the website because the heroku server has to start up",
+    "is a Frontend Mentor challenge made with HTML, CSS(Grid, Flexbox) & JS"
   ]
   let links = [
     "https://gifted-einstein-e0f0e1.netlify.app/",
     "https://whattodo-rails.herokuapp.com/",
     "https://gracious-nobel-67deb6.netlify.app/",
     "https://tlostl-f.herokuapp.com/",
-    "https://diego-salinas-blog.herokuapp.com/"
+    "https://diego-salinas-blog.herokuapp.com/",
+    "https://diegoog09.github.io/remote-work-app/"
   ]
   const btnNext = document.getElementById('next')
   btnNext.onclick = function next() {
