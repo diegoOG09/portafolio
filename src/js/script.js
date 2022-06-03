@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'images/website5.png',
     'images/website6.png',
     'images/website7.png',
-    'images/website8.png'
+    'images/website8.png',
+    'images/website9.png'
   ]
   let title = [
     "BlogDeCafe",
@@ -23,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "Check in/out",
     "Personal website & blog",
     "Frontend Mentor - Remote work app",
-    "YesNo App"
+    "YesNo App",
+    "PokeAPI Game"
   ]
   let text = [
     "is a blog dedicated to coffee where tips, recipes and courses are provided.",
@@ -32,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "is a system designed for a company that wants to check in and check out employees. [Rails, JS, HTML, CSS]",
     "is where I write articles and tell some things about myself. It takes a while to open the website because the heroku server has to start up",
     "is a Frontend Mentor challenge made with HTML, CSS(Grid, Flexbox) & JS",
-    "is a small app that responds to anything with a yes or no answer [Vue, HTML, CSS]."
+    "is a small app that responds to anything with a yes or no answer [Vue, HTML, CSS].",
+    "is a game that uses the PokeAPI for list the Pokemons and try to guess which one is the correct."
   ]
   let links = [
     "https://gifted-einstein-e0f0e1.netlify.app/",
@@ -41,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "https://tlostl-f.herokuapp.com/",
     "https://diego-salinas-blog.herokuapp.com/",
     "https://diegoog09.github.io/remote-work-app/",
-    "https://playful-flan-aba5cd.netlify.app"
+    "https://playful-flan-aba5cd.netlify.app",
+    "https://vue-poke-apimon.netlify.app/"
   ]
   const btnNext = document.getElementById('next')
   btnNext.onclick = function next() {
