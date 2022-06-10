@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'images/website6.png',
     'images/website7.png',
     'images/website8.png',
-    'images/website9.png'
+    'images/website9.png',
+    'images/website10.png'
   ]
   let title = [
     "BlogDeCafe",
@@ -25,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "Personal website & blog",
     "Frontend Mentor - Remote work app",
     "YesNo App",
-    "PokeAPI Game"
+    "PokeAPI Game",
+    "Chambas Section"
   ]
   let text = [
     "is a blog dedicated to coffee where tips, recipes and courses are provided.",
@@ -35,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "is where I write articles and tell some things about myself. It takes a while to open the website because the heroku server has to start up",
     "is a Frontend Mentor challenge made with HTML, CSS(Grid, Flexbox) & JS",
     "is a small app that responds to anything with a yes or no answer [Vue, HTML, CSS].",
-    "is a game that uses the PokeAPI for list the Pokemons and try to guess which one is the correct."
+    "is a game that uses the PokeAPI for list the Pokemons and try to guess which one is the correct.",
+    "is a section where the users and admin can post job opportunities."
   ]
   let links = [
     "https://gifted-einstein-e0f0e1.netlify.app/",
