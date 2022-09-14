@@ -15,19 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     'images/website7.png',
     'images/website8.png',
     'images/website9.png',
-    'images/website10.png'
+    'images/website11v2.png'
   ]
   let title = [
     "BlogDeCafe",
     "ToDo App",
-    // "Universidad",
     "Buscador de autos",
     "Check in/out",
     "Personal website & blog",
     "Frontend Mentor - Remote work app",
     "YesNo App",
     "PokeAPI Game",
-    "Chambas Section"
+    "Analyze This"
   ]
   let text = [
     "is a blog dedicated to coffee where tips, recipes and courses are provided.",
@@ -38,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "is a Frontend Mentor challenge made with HTML, CSS(Grid, Flexbox) & JS",
     "is a small app that responds to anything with a yes or no answer [Vue, HTML, CSS].",
     "is a game that uses the PokeAPI for list the Pokemons and try to guess which one is the correct.",
-    "is a section where the users and admin can post job opportunities."
+    "is a web tool for analyzing texts."
   ]
   let links = [
     "https://gifted-einstein-e0f0e1.netlify.app/",
@@ -48,7 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "https://diego-salinas-blog.herokuapp.com/",
     "https://diegoog09.github.io/remote-work-app/",
     "https://playful-flan-aba5cd.netlify.app",
-    "https://vue-poke-apimon.netlify.app/"
+    "https://vue-poke-apimon.netlify.app/",
+    "https://analyze-this.netlify.app/"
   ]
   const btnNext = document.getElementById('next')
   btnNext.onclick = function next() {
